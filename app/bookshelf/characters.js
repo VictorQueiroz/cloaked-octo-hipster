@@ -1,13 +1,16 @@
 'use strict';
 
 var knex = require('knex')({
-  client: 'sqlite',
+  client: 'mysql',
+  connection: {
+  	host: 'localhost',
+  	user: 'root',
+  	password: '',
+  	database: 'characters'
+  },
   migrations: {
   	tableName: 'migrations'
-  },
-  connection: {
-    filename: './characters.sqlite'
-  },
+  }
 });
 
 var bookshelf = require('bookshelf')(knex);

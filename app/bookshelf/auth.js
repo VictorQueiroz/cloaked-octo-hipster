@@ -6,7 +6,10 @@ var knex = require('knex')({
   	tableName: 'migrations'
   },
   connection: {
-    filename: './auth.sqlite'
+  	host: 'localhost',
+  	user: 'root',
+  	password: '',
+  	database: 'auth'
   },
 });
 
