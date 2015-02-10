@@ -1,15 +1,12 @@
 'use strict';
 
 var knex = require('knex')({
-  client: 'mysql',
-  connection: {
-    host: process.env.SERVER_MYSQL_HOST,
-    user: process.env.SERVER_MYSQL_USERNAME,
-    password: process.env.SERVER_MYSQL_PASSWORD,
-    database: process.env.SERVER_WORLD_DB
-  },
+  client: 'sqlite',
   migrations: {
   	tableName: 'migrations'
+  },
+  connection: {
+    filename: './world.sqlite'
   },
   pool: {
     min: 0,

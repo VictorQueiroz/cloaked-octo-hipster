@@ -2,12 +2,9 @@
 
 var parse = require('./parse');
 var knex = require('knex')({
-  client: 'mysql',
+  client: 'sqlite',
   connection: {
-    host: process.env.SERVER_MYSQL_HOST,
-    user: process.env.SERVER_MYSQL_USERNAME,
-    password: process.env.SERVER_MYSQL_PASSWORD,
-    database: 'server'
+    filename: './server.sqlite'
   },
   migrations: {
   	tableName: 'migrations'
