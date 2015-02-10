@@ -1,0 +1,19 @@
+{
+  "name": "cloaked-octo-hispter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.1",
+    "bluebird": "^2.9.7",
+    "bookshelf": "^0.7.9",
+    "knex": "^0.7.3",
+    "q": "^1.0.0",
+    "underscore": "^1.7.0"
+  }
+}
